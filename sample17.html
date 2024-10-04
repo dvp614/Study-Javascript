@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x, y;
+        for(x=2; x<=5; x++) {
+            document.write("<b> ---[" + x + "단]--- </b>" + "<br>"); 
+            for(y=1; y <= 9; y++) {
+                document.write(x + "*" + y + "=" + (x * y) + "<br>"); 
+            }
+        }   
+    </script>
+    
+    <hr>
+
+    <script>
+        var x=1;
+        var sum=0;
+        while(x<=100) {
+            sum+=x;
+            x++;
+        } 
+        document.write("1~100까지 합 : <b>" + sum + "</b>");   
+    </script>
+
+    <hr>
+
+    <script>
+        var x=1;
+        var sum=0;
+        while(1) {    // 무한 반복
+            sum+=x;
+            x++;
+            if(x==10001)
+                break;
+        } 
+        document.write("1~10000까지 합 : <b>" + sum + "</b>");   
+    </script>  
+    
+    <hr>
+
+    <script>
+        var x=1;
+        var sum=0;
+        do {
+            sum+=x;
+            x++;
+        } while(x<=100);
+        document.write("1~100까지 합 : <b>" + sum + "</b>");   
+    </script>
+
+    <hr>
+
+    <script>
+        var x=0;
+        var sum=0;
+        while(1) {
+            x+=3;   // 3의 배수
+            if(x>100)
+                break;
+            sum+=x;
+            document.write(x + " ");
+        }
+        document.write("<p/>");
+        document.write("1~100까지 수 중 3의 배수 합 : <b>" + sum + "</b>");   
+    </script>
+
+    <hr>
+
+    <script>
+        var x=0;
+        var sum=0;
+        for(x=1; x<=100; x++) {
+            if(x%3 != 0)
+                continue;    
+            sum+=x;
+            document.write(x + " ");
+        }
+        document.write("<p/>");
+        document.write("1~100까지 수 중 3의 배수 합 : <b>" + sum + "</b>");   
+    </script>
+
+    <hr>
+    
+    
+</body>
+</html>
